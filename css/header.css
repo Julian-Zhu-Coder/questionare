@@ -1,0 +1,57 @@
+@import "http://at.alicdn.com/t/font_2239045_2orfclekzpo.css";
+
+.header{
+    height: 40px;
+    background: #ee7419;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.header .container{
+    width: 230px;
+    height: 20px;
+    margin-left: 83px;
+
+    color: #fff;
+}
+
+.header .container .l-words a{
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.header .container .r-words a{
+    font-size: 13px;
+    line-height: 13px;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+.header .iconfont{
+    font-size: 20px;
+   cursor: pointer;
+}
+
+.header .index-sign{
+    width: 20px;
+    height: 20px;
+   
+}
+
+.header .index-sign img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}

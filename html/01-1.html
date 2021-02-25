@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <link href="../css/01-1.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/header.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/reset.css" rel="stylesheet" type="text/css"/>
+    <script async src="../js/01-1.js"></script>
+</head>
+<body onload="freshQuestionareList();">
+<div class="bg">
+    <header class="header">
+        <div class="container clearfix">
+            <div class="index-sign float-left">
+                <img src="../img/logo.png" alt="">
+            </div>
+            <div class="l-words float-left">
+                <a href="">问卷调查</a>
+            </div>
+            <div class="r-words float-right">
+                <a href="./01-1.html">问卷列表</a>
+            </div>
+        </div>
+
+    </header>
+
+
+    <div class="background">
+        <div class="container">
+            <div class="list-header">
+                <div class="title">标题</div>
+                <div class="time">时间</div>
+                <div class="state">状态</div>
+                <div class="operation">操作</div>
+                <button class="btn-newQuestionare" onclick="newFile();">+ 新建问卷</button>
+            </div>
+            <div class="questionare-list" id="questionareList">
+<!--                <div class="questionare">-->
+<!--                    <div class="checkbox">-->
+<!--                        <input type="checkbox"  name="cb" onclick="clickCb();">-->
+<!--                    </div>-->
+<!--                    <div class="title">-->
+<!--                        <p>这是我的第一份问卷</p>-->
+<!--                    </div>-->
+<!--                    <div class="time">-->
+<!--                        <p>2016-04-12 20:46:52</p>-->
+<!--                    </div>-->
+<!--                    <div class="state">-->
+<!--                        <p>发布中</p>-->
+<!--                    </div>-->
+<!--                    <div class="operation">-->
+<!--                        <button onclick="">填写</button>-->
+<!--                        <button onclick="editFile();">编辑</button>-->
+<!--                        <button onclick="delTr(this);">删除</button>-->
+<!--                        <button>查看数据</button>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="questionare">-->
+<!--                    <div class="checkbox">-->
+<!--                        <input type="checkbox"  name="cb" onclick="clickCb();">-->
+<!--                    </div>-->
+<!--                    <div class="title">-->
+<!--                        <p>这是我的第一份问卷</p>-->
+<!--                    </div>-->
+<!--                    <div class="time">-->
+<!--                        <p>2016-04-12 20:46:52</p>-->
+<!--                    </div>-->
+<!--                    <div class="state"><p>发布中</p></div>-->
+<!--                    <div class="operation">-->
+<!--                        <button onclick="">填写</button>-->
+<!--                        <button onclick="editFile();">编辑</button>-->
+<!--                        <button onclick="delTr(this);">删除</button>-->
+<!--                        <button>查看数据</button>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+            <div class="list-footer">
+                <input type="checkbox" id="selectAll" value="全选" onclick="selectAll()"/>
+                <font>全选</font>
+                <button class="btn-deleteSelected" onclick="deleteSelected()">删除选中</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

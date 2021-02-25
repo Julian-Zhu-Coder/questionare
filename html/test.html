@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <link href="../css/01-1.css" rel="stylesheet" type="text/css"/>
+<!--    <script type="text/javascript" src="01-1.js"/>-->
+</head>
+<body>
+<div class="bg">
+    <header class="header">
+
+
+    </header>
+
+    <div class="border list">
+        <div class="border">
+            <button id="deleteData">清除localStorage</button>
+            <button id="test" onclick="test()">测试：导入数据</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    // 模拟数据
+    let tmpData1 = {
+        "id": "1",
+        "state": "已结束",
+        "createtime": "2016-04-12",
+        "deadline": "2016-04-13",
+        "title": "关于校园二手商品交易平台的调查",
+        "questionList": [
+            {
+                "scription": "你的年级是？",
+                "type": "radio",
+                "answer": [
+                    { "text": "大一", "total": 100 },
+                    { "text": "大二", "total": 40 },
+                    { "text": "大三", "total": 50 },
+                    { "text": "大四", "total": 30 },
+                    { "text": "研究生", "total": 40 },
+                ],
+            },
+            {
+                "scription": "你是否听过O2O商业模式？",
+                "type": "radio",
+                "answer": [
+                    { "text": "听过，但不了解", "total": 100 },
+                    { "text": "完全没听过", "total": 40 },
+                    { "text": "听过，比较了解", "total": 50 },
+                ],
+            },
+            {
+                "scription": "你是否愿意将自己的闲置物品在这样的一个平台进行售卖？",
+                "type": "radio",
+                "answer": [
+                    { "text": "愿意", "total": 40 },
+                    { "text": "不愿意", "total": 60 },
+                ],
+            },
+            {
+                "scription": "有哪些商品你更愿意买二手的？",
+                "type": "checkbox",
+                "answer": [
+                    { "text": "自行车", "total": 40 },
+                    { "text": "书本教材", "total": 60 },
+                    { "text": "生活日常品", "total": 60 },
+                    { "text": "其他", "total": 60 },
+                ],
+            },
+            {
+                "scription": "若有这样一个平台，您有什么建议？",
+                "type": "text",
+                "answer": [{ "text": "五星好评" }],
+                "optional":1//1必填  0选填
+            }
+        ],
+    };//已结束
+    let tmpData2 = {
+        "id": "1",
+        "state": "发布中",
+        "createtime": "2020-04-12",
+        "deadline": "2021-04-12",
+        "title": "公众对辅助生殖的了解和看法",
+        "questionList": [
+            {
+                "scription": "你的年龄是？",
+                "type": "radio",
+                "answer": [
+                    { "text": "20岁以下", "total": 20 },
+                    { "text": "21-40", "total": 100 },
+                    { "text": "40-50", "total": 40 },
+                    { "text": "51岁以上", "total": 100 },
+                ],
+            },
+            {
+                "scription": "你的性别？",
+                "type": "radio",
+                "answer": [
+                    { "text": "男", "total": 70 },
+                    { "text": "女", "total": 60 },
+                ],
+            },
+            {
+                "scription": "你选中医疗单位最看重的是？",
+                "type": "checkbox",
+                "answer": [
+                    { "text": "分娩的成功率", "total": 70 },
+                    { "text": "医院的服务态度", "total": 60 },
+                    { "text": "隐私与安全", "total": 70 },
+                    { "text": "医院知名度", "total": 60 },
+                    { "text": "熟人推荐", "total": 70 },
+                ],
+            },
+        ],
+    };//发布中
+    let tmpData3 = {
+        "id": "2",
+        "state": "未发布",
+        "createtime": "2020-10-12",
+        "deadline": "2021-04-12",
+        "title": "大学生对于国产手机品牌认同感调查",
+        "questionList": [
+            {
+                "scription": "你的手机是国产手机吗？",
+                "type": "radio",
+                "answer": [
+                    { "text": "是", "total": 0 },
+                    { "text": "否", "total": 0 },
+                ],
+            },
+            {
+                "scription": "你从哪里知道这个问卷？",
+                "type": "checkbox",
+                "answer": [
+                    { "text": "宿舍", "total": 0 },
+                    { "text": "厕所", "total": 0 },
+                ],
+            },
+            {
+                "scription": "请留下您的建议",
+                "type": "text",
+                "answer": [
+                    { "text": "五星好评" },
+                ],
+                "optional":0//1必填  0选填
+            }
+        ],
+    };//未发布
+    let list = [{"id":1},{"id":2},{"id":3}];
+    function test() {
+        var storage = window.localStorage;
+        storage.clear();
+        storage.setItem(storage.length+1,JSON.stringify(tmpData1));//key=1
+        storage.setItem(storage.length+1,JSON.stringify(tmpData2));//key=2
+        storage.setItem(storage.length+1,JSON.stringify(tmpData3));
+        storage.setItem("list",JSON.stringify(list));
+        storage.setItem("onlyNum", storage.length+1);
+    }
+
+    var deleteData = document.getElementById("deleteData");
+    deleteData.onclick = function(){
+        localStorage.clear();
+    }
+
+</script>
+</body>
+</html>

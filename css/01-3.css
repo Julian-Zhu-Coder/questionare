@@ -1,0 +1,183 @@
+@import "http://at.alicdn.com/t/font_2239045_3vxghmyyxec.css";
+
+body{
+    background: #efefef;
+    height: 900px;
+}
+
+
+.percent-area {
+    width: 300px;
+    height: 20px;
+}
+
+.percent-bar {
+    width: 231px;
+    height: 11px;
+    border: 1px solid #bababa;
+}
+
+.colorStuff {
+    height: 11px;
+    width: 0;
+    background: #ee7419;
+}
+
+.data-container{
+    width: 1040px;
+    
+    margin: 0 auto;
+    margin-top: 65px;
+    border:1px solid #e5e5e5;
+    box-shadow: 1px 1px 1px 1px #999;
+    border-radius: 5px;
+
+    padding-bottom: 50px;
+}
+
+.data-container .data-title a{
+    display: block;
+    width: 97px;
+    height: 25px;
+    text-align: center;
+    color: #565656;
+    padding-top: 3px;
+    box-sizing: border-box;
+    font-size: 13px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.data-container .data-title .title{
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.data-container .data-title .title h2{
+    font-size: 17px;
+    color: #555555;
+    font-weight: bold;
+}
+
+.data-container .data-title .title span{
+    font-size: 12px;
+    color: #666666;
+}
+
+.data-container .data-show{
+    width: 970px;
+    
+    margin: 0 auto;
+    border-top: 2px solid #aeaeae;
+    border-bottom: 2px solid #aeaeae;
+    margin-bottom: 40px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+.data-container .data-show .section{
+    width: 930px;
+    border: 2px solid #aeaeae;
+    margin-bottom: 15px;
+    margin-left: 18px;
+    padding-top: 18px;
+    padding-left: 25px;
+    padding-right: 70px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    
+}
+
+.data-container .data-show .section .aside-left{
+    width: 100px;
+}
+
+.data-container .data-show .section .aside-left .question-number{
+    width: 200px;
+    margin-bottom: 5px;
+}
+
+.data-container .data-show .section .aside-left .question{
+    /*width: 00px;*/
+    margin-left: 20px;
+}
+
+.data-container .data-show .section .aside-left .question span{
+    display: block;
+    
+    
+}
+
+.data-container .data-show .section .aside-left  span{
+    
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666666;
+}
+
+.data-container .data-show .section .aside-right{
+    width: 270px;
+}
+
+.data-container .data-show .section .aside-right span{
+    display: block;
+    color: #5b5b5b;
+}
+
+.data-container .data-show .section .aside-right .percent-area{
+    box-sizing: border-box;
+    margin-top: 15px;
+    position: relative;
+}
+
+/* .data-container .data-show .section .aside-right .percent-area:nth-child(2n){
+    margin-top: 15px;
+}
+
+.data-container .data-show .section .aside-right .percent-area:nth-child(2n+1){
+    margin-top: 10px;
+} */
+
+.data-container .data-show .section .aside-right .percent-area .percentValue{
+    position: absolute;
+    font-size: 9px;
+    left: 240px;
+    top: 2px;
+}
+
+
+.question-type{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/* .data-container .data-show .radiO{
+    height: 110px;
+}
+
+.data-container .data-show .checkBox{
+    height: 160px;
+}
+
+
+.data-container .data-show .TexT{
+    height: 80px;
+} */
+
+.data-container .back{
+    width: 97px;
+    height: 25px;
+    text-align: center;
+    background: #ee7419;
+    color: #fff;
+    padding-top: 3px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    margin: 0 auto;
+}
+
+.data-container .back span{  
+    font-size: 13px;
+}

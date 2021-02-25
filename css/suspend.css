@@ -1,0 +1,106 @@
+
+@import "http://at.alicdn.com/t/font_2239045_q1czrddoyd.css";
+
+body{
+    position: relative;
+}
+
+.suspend{
+    position: absolute;
+    width: 25%;
+    height: 186px;
+
+    border-radius: 5px;
+    top: 250px;
+    left: 37%;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px #666;
+}
+
+.suspend .suspend-head{
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    background: #f7f7f7;
+    padding-top: 16px;
+    box-sizing: border-box;
+}
+
+.suspend .suspend-head span{
+    font-weight: bold;
+    margin-left: 28px;
+}
+
+.suspend .suspend-head i{
+    color: #979797;
+    margin-right: 20px;
+}
+
+.suspend .suspend-text{
+    width: 100%;
+    height: 80px;
+    padding-left: 30px;
+    padding-top: 15px;
+    font-size: 14px;
+    color: #5e5e5e;
+}
+
+.suspend .suspend-text span{
+    line-height: 2;
+    display:block;
+}
+
+.suspend .suspend-text .suspend-deadline::before{
+    content: "( 此问卷截止日期为";
+}
+
+.suspend .suspend-text .suspend-deadline::after{
+    content: " )";
+}
+
+.suspend .func{
+
+    width: 143px;
+    height: 23px;
+    margin-left: 105px;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.suspend .func div{
+    width: 65px;
+    height: 21px;
+    text-align: center;
+
+    border: 1px solid #a1a1a1;
+    border-radius: 2px;
+}
+
+.suspend .func .ensure{
+
+    background: #f07600;   
+}
+
+.suspend .func .ensure button{
+    color: #fff;
+}
+
+.suspend .func .cancel button{
+    color: #5e5e5e;
+}
+
+.suspend .func div button{
+    line-height: 1.8;
+}
+
+.suspend-bg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    left: 0;
+    top: 0;
+    z-index: 1;
+    display: none;
+}

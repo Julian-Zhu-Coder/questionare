@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>编辑页</title>
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/edit.css">
+    <link rel="stylesheet" href="../css/suspend.css">
+
+    <script async src="../js/edit.js"></script>
+</head>
+
+<body onload="initData();updateQuestionList();">
+
+    <header class="header">
+        <div class="container clearfix">
+            <div class="sign float-left">
+                <i class="iconfont iconwenhao1"></i>
+            </div>
+            <div class="l-words float-left">
+                <a href="">问卷调查</a>
+            </div>
+            <div class="r-words float-right">
+                <a href="">我的问卷</a>
+            </div>
+        </div>
+
+    </header>
+    <div class="edit">
+        <div class="container page">
+            <div class="title">
+                <input type="text" id="title" placeholder="请输入标题">
+            </div>
+            <div id="question-list">
+
+            </div>
+            <div class="add" id="add">
+                <div class="option close" id="add-option">
+
+                </div>
+                <div class="view" onclick="createButton()">
+                    <p>添加问题</p>
+                </div>
+            </div>
+            <div class="bottom clearfix">
+                <div class="float-left">
+                    问卷截止日期：<input type="date" name="" id="deadline" value="2020-12-10">
+                </div>
+                <div class="float-right">
+
+                    <button onclick="saveQuestionare()">保存问卷</button>
+                    <button class="pubquestionnaire" style="background-color: rgb(240,118,0);color: #fff;">发布问卷</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="suspend-bg">
+        <div class="suspend">
+
+            <div class="suspend-head clearfix">
+                <span class="float-left">提示</span>
+                <button class="float-right cancel-btn"><i class="iconfont iconquxiao"></i></button>
+            </div>
+
+            <div class="suspend-text ">
+                <span>是否发布问卷 ？</span>
+                <span class="suspend-deadline" id="suspend-deadline"></span>
+            </div>
+
+            <div class="func clearfix">
+                <div class="ensure float-left">
+                    <button onclick="releaseQuestionare()">确定</button>
+                </div>
+                <div class="cancel float-right">
+                    <button class="cancel-btn">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
